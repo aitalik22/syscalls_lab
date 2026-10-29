@@ -1,0 +1,15 @@
+758122 execve("/usr/bin/python3", ["python3", "process_demo.py"], 0x7ffe438f1e70 /* 23 vars */) = 0
+758122 vfork( <unfinished ...>
+758123 execve("/usr/local/sbin/echo", ["echo", "Hello from child"], 0x7fff10e97a40 /* 23 vars */) = -1 ENOENT (No such file or directory)
+758123 execve("/usr/local/bin/echo", ["echo", "Hello from child"], 0x7fff10e97a40 /* 23 vars */) = -1 ENOENT (No such file or directory)
+758123 execve("/usr/sbin/echo", ["echo", "Hello from child"], 0x7fff10e97a40 /* 23 vars */) = -1 ENOENT (No such file or directory)
+758123 execve("/usr/bin/echo", ["echo", "Hello from child"], 0x7fff10e97a40 /* 23 vars */ <unfinished ...>
+758122 <... vfork resumed>)             = 758123
+758123 <... execve resumed>)            = 0
+758122 wait4(758123,  <unfinished ...>
+758123 exit_group(0)                    = ?
+758123 +++ exited with 0 +++
+758122 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 758123
+758122 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=758123, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+758122 exit_group(0)                    = ?
+758122 +++ exited with 0 +++
